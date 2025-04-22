@@ -31,12 +31,6 @@ A Helm chart for Kubernetes
 | image.repository | string | `"springboot-expose"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets[0].name | string | `"regcred"` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.dnsWildcard | string | `"shared.edp-dev.cloudmentor.academy"` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.path | string | `"/"` |  |
-| ingress.pathType | string | `"Prefix"` | pathType is only for k8s >= 1.1= |
-| ingress.tls | list | `[]` |  |
 | livenessProbe.tcpSocket.port | string | `"http"` |  |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` | https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector |
